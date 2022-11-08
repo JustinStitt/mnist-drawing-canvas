@@ -22,6 +22,7 @@
     context.lineWidth = 7;
     context.beginPath();
     context.rect(0, 0, 400, 400);
+    context.fillStyle = background;
     context.fill();
     handleSize();
   });
@@ -175,8 +176,12 @@
 </div>
 
 <style>
+  canvas {
+    width: 420px;
+    min-height: 420px;
+  }
+
   .container {
-    width: 40vw;
     margin-top: 2px;
     display: flex;
     flex-direction: column;
